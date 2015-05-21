@@ -41,7 +41,7 @@
 
         android:dividerHeight="0dp"
 
-        android:background="#B00000"
+        android:background="#ff22b045"
 
         />
 
