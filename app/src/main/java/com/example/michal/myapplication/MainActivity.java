@@ -15,7 +15,7 @@ import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.OnActivityResult;
 
 @EActivity(R.layout.activity_main)
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends ActionBarActivity{
 
     @Click
     void skanujClicked()

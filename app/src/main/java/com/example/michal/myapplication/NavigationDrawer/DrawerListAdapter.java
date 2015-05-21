@@ -7,7 +7,12 @@ import android.widget.BaseAdapter;
 
 import com.example.michal.myapplication.R;
 import com.example.michal.myapplication.fragment.AboutAppFragment_;
+import com.example.michal.myapplication.fragment.ContactFragment_;
 import com.example.michal.myapplication.fragment.HomeFragment_;
+import com.example.michal.myapplication.fragment.OptionsFragment;
+import com.example.michal.myapplication.fragment.OptionsFragment_;
+import com.example.michal.myapplication.fragment.ScanFragment;
+import com.example.michal.myapplication.fragment.ScanFragment_;
 
 import org.androidannotations.annotations.AfterInject;
 import org.androidannotations.annotations.EBean;
@@ -37,6 +42,19 @@ public class DrawerListAdapter extends BaseAdapter {
         items.add(new DrawerItem(R.string.title_aboutapp, R.drawable.icon_about,
 
                 AboutAppFragment_.class));
+
+        items.add(new DrawerItem(R.string.title_options, R.drawable.icon_about,
+
+               OptionsFragment_.class));
+
+        items.add(new DrawerItem(R.string.title_scan, R.drawable.icon_about,
+
+                ScanFragment_.class));
+
+        items.add(new DrawerItem(R.string.title_contact, R.drawable.icon_about,
+
+                ContactFragment_.class));
+
 
     }
 

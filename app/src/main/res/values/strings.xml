@@ -10,4 +10,7 @@
     <string name="title_home">Witamy!</string>
 
     <string name="title_aboutapp">O aplikacji</string>
+    <string name="title_options">Opcje</string>
+    <string name="title_scan">Skanuj</string>
+    <string name="title_contact">Kontakt</string>
 </resources>
