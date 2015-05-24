@@ -13,30 +13,21 @@ import org.androidannotations.annotations.ViewById;
 /**
  * Created by Mariusz on 2015-05-20.
  */
-    @EViewGroup(R.layout.drawer_list_item)
-    public class DrawerItemView extends LinearLayout {
+@EViewGroup(R.layout.drawer_list_item)
+public class DrawerItemView extends LinearLayout {
 
-        @ViewById
+    @ViewById
+    ImageView icon;
 
-        ImageView icon;
+    @ViewById
+    TextView name;
 
-        @ViewById
-
-        TextView name;
-
-        public DrawerItemView(Context context) {
-
-            super(context);
-
-        }
-
-        public void bind(DrawerItem drawerItem) {
-
-            icon.setImageResource(drawerItem.getIconResId());
-
-            name.setText(drawerItem.getTitleResId());
-
-        }
-
+    public DrawerItemView(Context context) {
+        super(context);
     }
 
+    public void bind(DrawerItem drawerItem) {
+        icon.setImageResource(drawerItem.getIconResId());
+        name.setText(drawerItem.getTitleResId());
+    }
+}
