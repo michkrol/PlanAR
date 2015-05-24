@@ -138,11 +138,7 @@ import org.androidannotations.annotations.ViewById;
 
                 Fragment fragment = fragmentClass.newInstance();
 
-                fragmentManager.beginTransaction()
-
-                        .replace(R.id.content_frame, fragment)
-
-                        .commit();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
 
             } catch (Exception e) {
 
